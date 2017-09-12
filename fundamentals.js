@@ -26,4 +26,4 @@ var aCar = {
     			},
     }
 
-    console.log("it is a " + aCar.color.exterior + " car, " + aCar.milage + " milage and " + aCar.color.interior.texture + " interior");
+    console.log("It is a " + aCar.color.exterior + " car, " + aCar.milage + " milage and " + aCar.color.interior.texture + " interior");

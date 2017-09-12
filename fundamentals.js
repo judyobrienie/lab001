@@ -10,6 +10,11 @@ var aCar = {
         	model: "Corolla",
         	cc: "1.8"
         },
+
+         features : ['Parking assist', 
+                    'Alarm', 
+                    'Tow-bar'],
+
         registration : {
         	year:"10",
         	county_code: "WD",
@@ -33,3 +38,16 @@ var aCar = {
 
     console.log("It is a " + aCar.color.exterior + " car, " + aCar.milage + " milage and " + aCar.color.interior.texture + " interior");
     console.log("First owner : " + aCar.previous_owners[0].name);
+
+
+     for (var i = 0 ; i < aCar.features.length ; i += 1) {
+        console.log(aCar.features[i]) ;
+    } 
+
+    for(var i = 0 ; i < aCar.previous_owners.length ; i += 1) {
+    	console.log(aCar.previous_owners[i].name) ;
+    }
+
+    for(var p in aCar.type) {
+    	console.log(p.toUpperCase() + ' = ' + aCar.type[p] ) ;
+    }
